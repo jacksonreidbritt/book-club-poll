@@ -188,4 +188,8 @@ if __name__ == '__main__':
     print(f"Sample poll created with ID: {sample_poll_id}")
     print(f"Access it at: http://localhost:5000/api/polls/{sample_poll_id}")
     
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Use debug mode only in development
+    # For production, use a production WSGI server like gunicorn
+    import os
+    debug_mode = os.environ.get('FLASK_ENV', 'development') == 'development'
+    app.run(debug=debug_mode, host='0.0.0.0', port=5000)
