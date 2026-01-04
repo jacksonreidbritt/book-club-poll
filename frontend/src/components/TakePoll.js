@@ -13,6 +13,7 @@ function TakePoll({ pollId, onBack, onViewResults }) {
 
   useEffect(() => {
     fetchPoll();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pollId]);
 
   const fetchPoll = async () => {

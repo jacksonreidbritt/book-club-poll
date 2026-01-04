@@ -9,6 +9,7 @@ function PollResults({ pollId, onBack }) {
 
   useEffect(() => {
     fetchResults();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pollId]);
 
   const fetchResults = async () => {
