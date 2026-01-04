@@ -184,7 +184,7 @@ def get_poll_results(poll_id):
             for response in responses:
                 answer = response.get('responses', {}).get(str(idx))
                 if answer:
-                    if question.get('type') == 'multiple_choice':
+                    if question.get('type') in ['multiple_choice', 'rating']:
                         question_results['answers'][answer] = question_results['answers'].get(answer, 0) + 1
                     elif question.get('type') == 'text':
                         if 'text_responses' not in question_results:
