@@ -1,3 +1,12 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+frontend/build/
+
+# Firebase
+.firebaserc
+serviceAccountKey.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

@@ -1,0 +1,8 @@
+# Firebase Configuration Example
+# Rename this file to .firebaserc and update with your project ID
+
+{
+  "projects": {
+    "default": "your-firebase-project-id"
+  }
+}
