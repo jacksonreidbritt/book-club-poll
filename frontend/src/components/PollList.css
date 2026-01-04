@@ -1,0 +1,86 @@
+.poll-list h2 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.no-polls {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.polls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.poll-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.poll-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.poll-card h3 {
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.poll-description {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.poll-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.question-count {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.poll-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.poll-status.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.poll-status.inactive {
+  background: #fce4ec;
+  color: #c2185b;
+}
+
+.poll-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.poll-actions button {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
